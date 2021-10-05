@@ -1,21 +1,14 @@
-/* 2. Pedir al usuario 2 numeros
-    - Imprimir en consola cual es el menor de los 2
-    - Imprimir en consola cual es el mayor de los 2
-   
+/* 3. Pedir al usuario los siguientes datos a un usuario (nombre, peso actual en kg):
+     - Calcular el peso que tendria esa persona en la luna en Imprimirlo en consola
 */
 
-let num1=window.prompt("Ingresa el primer numero: ");
-let num2=window.prompt("Ingresa el segundo numero: ");
+let nombre=window.prompt("Ingresa tu nombre: ");
+let pesoTierra=window.prompt("Ingresa tu peso actual en kg: ");
 
-function numMay(num1, num2){
-    if(num1>num2){
-        console.log("El primer número es mayor")
-    }else if(num1<num2){
-        console.log("El segundo número es mayor")
-    }
-    else{
-        console.log("Los dos numeros son iguales")
-    }
+function pesoLuna(nombre, peso){
+    pesoLuna=((parseInt(peso))/9.81)*1.62;
+
+    return console.log("El peso de "+nombre+ " en la Luna es de "+ Math.round(pesoLuna) +" Kg.")
 }
 
-numMay(num1,num2);
+pesoLuna(nombre,pesoTierra);
