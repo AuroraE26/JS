@@ -3,7 +3,7 @@ Ejercicio 3:
 Imprimir en consola la suma total de todos los digitos de una cantidad p.ej. "1234" -> 10
 */
 
-let num=window.prompt("Ingrese un numero entre 10 y 100: ");
+let num=window.prompt("Ingrese un numero: ");
 function sumarDigitos(numero){
     let suma=0;
     digitos=numero.split("");
